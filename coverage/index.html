@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-12-03T15:33:17+00:00">2019-12-03T15:33:17+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-12-03T17:31:44+00:00">2019-12-03T17:31:44+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.26
+         1.13
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>3</b> files in total.
-    <b>29</b> relevant lines. 
-    <span class="green"><b>29</b> lines covered</span> and
+    <b>28</b> relevant lines. 
+    <span class="green"><b>28</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,7 +51,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#76953e94b34752d72a0bf55a60a559e8ef3e8418" class="src_link" title="spec/features/bookmarks_spec.rb">spec/features/bookmarks_spec.rb</a></td>
+        <td class="strong"><a href="#eb7a575beec3297477bdd558eced52c6bb9e01d5" class="src_link" title="spec/features/bookmarks_spec.rb">spec/features/bookmarks_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>9</td>
         <td>6</td>
@@ -61,7 +61,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#accf00d153518f26db535fc58ae4abee37b66a08" class="src_link" title="spec/features/hello_world_spec.rb">spec/features/hello_world_spec.rb</a></td>
+        <td class="strong"><a href="#a992e8104b67a9aee16a40ca3febc0ebf19de61a" class="src_link" title="spec/features/hello_world_spec.rb">spec/features/hello_world_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>6</td>
         <td>4</td>
@@ -71,13 +71,13 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#077cc6fa72f9827dabceaaba669a22038c495c99" class="src_link" title="spec/unit/bookmark_spec.rb">spec/unit/bookmark_spec.rb</a></td>
+        <td class="strong"><a href="#be268fed32e8d9586e8e4f03b1443e5f746bdc6b" class="src_link" title="spec/unit/bookmark_spec.rb">spec/unit/bookmark_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>34</td>
-        <td>19</td>
-        <td>19</td>
+        <td>28</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.2</td>
       </tr>
       
     </tbody>
@@ -96,7 +96,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="76953e94b34752d72a0bf55a60a559e8ef3e8418">
+        <div class="source_table" id="eb7a575beec3297477bdd558eced52c6bb9e01d5">
   <div class="header">
     <h3>spec/features/bookmarks_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -169,7 +169,7 @@
 </div>
 
       
-        <div class="source_table" id="accf00d153518f26db535fc58ae4abee37b66a08">
+        <div class="source_table" id="a992e8104b67a9aee16a40ca3febc0ebf19de61a">
   <div class="header">
     <h3>spec/features/hello_world_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -224,13 +224,13 @@
 </div>
 
       
-        <div class="source_table" id="077cc6fa72f9827dabceaaba669a22038c495c99">
+        <div class="source_table" id="be268fed32e8d9586e8e4f03b1443e5f746bdc6b">
   <div class="header">
     <h3>spec/unit/bookmark_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>19</b> relevant lines. 
-      <span class="green"><b>19</b> lines covered</span> and
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -262,52 +262,52 @@
           <code class="ruby">describe Bookmark do</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
-          <code class="ruby">  let(:db) { double :db, exec: [ {&#39;id&#39; =&gt; &#39;1&#39;, &#39;url&#39; =&gt; &#39;https://www.google.com&#39;},</code>
+          <code class="ruby">  let(:con) { PG.connect test_database }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">               {&#39;id&#39; =&gt; &#39;2&#39;, &#39;url&#39; =&gt; &#39;https://www.destroyallsoftware.com&#39;},</code>
+          <code class="ruby">  let(:test_database) { { dbname: &#39;bookmark_manager_test&#39;, user: ENV[&#39;USER&#39;] } }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">               {&#39;id&#39; =&gt; &#39;3&#39;, &#39;url&#39; =&gt; &#39;https://www.makersacademy.com&#39;} ] }</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="8">
-          <span class="hits">4</span>
-          
-          <code class="ruby">  let(:database) { { dbname: &#39;bookmark_manager&#39;, user: ENV[&#39;USER&#39;] } }</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;.all&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
+          <code class="ruby">    it &#39;makes a query to retrieve all the urls&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">      expect(con).to receive(:exec).with(&#39;SELECT * FROM bookmarks&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    before do</code>
+          <code class="ruby">      p con.exec &#39;SELECT * FROM bookmarks&#39;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="12">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
-          <code class="ruby">      allow(PG).to receive(:connect).with(database).and_return(db)</code>
+          <code class="ruby">      Bookmark.all</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -325,25 +325,25 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;connects to a database&#39; do</code>
+          <code class="ruby">    it &#39;returns all bookmarks&#39; do </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(PG).to receive(:connect).with(database)</code>
+          <code class="ruby">      con.exec(&quot;INSERT INTO bookmarks (url) VALUES (&#39;https://www.google.com&#39;);&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">      Bookmark.all</code>
+          <code class="ruby">      con.exec(&quot;INSERT INTO bookmarks (url) VALUES(&#39;https://www.destroyallsoftware.com&#39;);&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      con.exec(&quot;INSERT INTO bookmarks (url) VALUES(&#39;https://www.makersacademy.com&#39;);&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
@@ -355,88 +355,52 @@
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;makes a query to retrieve all the urls&#39; do</code>
+          <code class="ruby">      bookmarks = Bookmark.all</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="21">
           
-          <code class="ruby">      expect(PG.connect(database)).to receive(:exec).with(&#39;SELECT * FROM bookmarks&#39;)</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">      Bookmark.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &#39;returns all bookmarks&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      bookmarks = Bookmark.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
           <code class="ruby">      expect(bookmarks).to include(&quot;https://www.google.com&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(bookmarks).to include(&quot;https://www.destroyallsoftware.com&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(bookmarks).to include(&quot;https://www.makersacademy.com&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">end</code>
