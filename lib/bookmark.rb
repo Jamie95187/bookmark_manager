@@ -1,9 +1,9 @@
+require 'pg'
+
 class Bookmark
   def self.all
-    [
-      "https://www.google.com",
-      "https://www.yahoo.com",
-      "https://www.youtube.com"
-    ]
+    con = PG.connect(dbname: 'bookmark_manager', user: ENV['USER'])
+    rows = con.exec('SELECT * FROM bookmarks')
+    rows.map { |entry| entry['url'] }
   end
 end
