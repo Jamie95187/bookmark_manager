@@ -1,52 +1,41 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Desktop/Projects/bookmark_manager_mon/spec/features/bookmarks_spec.rb": [
+      "/Users/SamFolorunsho/CODE Projects/Makers Academy/Jamie_Wong_bookmark_manager/bookmark_manager/spec/features/bookmarks_spec.rb": [
         1,
         1,
-        0,
+        1,
         null,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_mon/spec/features/hello_world_spec.rb": [
+      "/Users/SamFolorunsho/CODE Projects/Makers Academy/Jamie_Wong_bookmark_manager/bookmark_manager/spec/features/hello_world_spec.rb": [
         1,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/student/Desktop/Projects/bookmark_manager_mon/spec/unit/bookmark_spec.rb": [
+      "/Users/SamFolorunsho/CODE Projects/Makers Academy/Jamie_Wong_bookmark_manager/bookmark_manager/spec/unit/bookmark_spec.rb": [
         1,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/student/Desktop/Projects/bookmark_manager_mon/lib/bookmark.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
+        1,
+        1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1575302775
+    "timestamp": 1575382567
   }
 }
