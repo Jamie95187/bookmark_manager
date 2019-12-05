@@ -12,8 +12,9 @@ describe Bookmark do
       Bookmark.all
     end
 
-    it 'returns all bookmarks' do 
-      con.exec("INSERT INTO bookmarks (url) VALUES ('https://www.google.com');")
+    it 'returns all bookmarks' do
+      # Add test data
+      con.exec("INSERT INTO bookmarks (url) VALUES('https://www.google.com');")
       con.exec("INSERT INTO bookmarks (url) VALUES('https://www.destroyallsoftware.com');")
       con.exec("INSERT INTO bookmarks (url) VALUES('https://www.makersacademy.com');")
 
