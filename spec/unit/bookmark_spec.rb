@@ -11,19 +11,30 @@ describe Bookmark do
       p con.exec 'SELECT * FROM bookmarks'
       Bookmark.all
     end
+  end
 
     it 'returns all bookmarks' do
-      # Add test data
-      con.exec("INSERT INTO bookmarks (url, title) VALUES('https://www.google.com', 'Google');")
-      con.exec("INSERT INTO bookmarks (url, title) VALUES('https://www.destroyallsoftware.com', 'Destroy Software');")
-      con.exec("INSERT INTO bookmarks (url, title) VALUES('https://www.makersacademy.com', 'Makers');")
+
+      bookmark = Bookmark.create(url: "https://www.google.com", title: "Google")
+      Bookmark.create(url: "https://www.destroyallsoftware.com", title: "Destroy Software")
+      Bookmark.create(url: "https://www.makersacademy.com", title: "Makers")
 
       bookmarks = Bookmark.all
 
-      expect(bookmarks).to include("Google: https://www.google.com")
-      expect(bookmarks).to include("Destroy Software: https://www.destroyallsoftware.com")
-      expect(bookmarks).to include("Makers: https://www.makersacademy.com")
-    end
-
+      expect(bookmarks.length).to eq 3
+      expect(bookmarks.first).to be_a Bookmark
+      expect(bookmarks.first.id).to eq bookmark.id
+      expect(bookmarks.first.title).to eq 'Google'
+      expect(bookmarks.first.url).to eq 'https://www.google.com'
   end
+
+  describe '.create' do
+    it 'creates a new bookmark' do
+     bookmark = Bookmark.create(url: 'www.google.com', title: 'Google').first
+
+     expect(bookmark['url']).to eq 'www.google.com'
+     expect(bookmark['title']).to eq 'Google'
+   end
+  end
+
 end

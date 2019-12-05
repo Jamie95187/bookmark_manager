@@ -23,6 +23,21 @@
         null,
         null
       ],
+      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/features/click_title_url_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/features/hello_world_spec.rb": [
         1,
         1,
@@ -57,8 +72,8 @@
         1,
         null,
         1,
-        3,
-        3,
+        2,
+        2,
         null,
         1,
         1,
@@ -67,15 +82,26 @@
         1,
         null,
         null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
         1,
         null,
         1,
         1,
         1,
+        0,
+        0,
+        null,
         null,
         1,
-        null,
         1,
+        1,
+        null,
         1,
         1,
         null,
@@ -84,6 +110,6 @@
         null
       ]
     },
-    "timestamp": 1575561450
+    "timestamp": 1575566249
   }
 }
