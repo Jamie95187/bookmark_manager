@@ -31,14 +31,24 @@ describe Bookmark do
 
   describe '.create' do
     it 'creates a new bookmark' do
-     bookmark = Bookmark.create(url: 'www.google.com', title: 'Google')
+     bookmark = Bookmark.create(url: 'https://www.google.com', title: 'Google')
      persisted_data = persisted_data(id: bookmark.id)
 
      expect(bookmark).to be_a Bookmark
      expect(bookmark.id).to eq persisted_data['id']
      expect(bookmark.title).to eq 'Google'
-     expect(bookmark.url).to eq 'www.google.com'
+     expect(bookmark.url).to eq 'https://www.google.com'
    end
+  end
+
+  describe '.delete' do
+    it 'deletes the given bookmark' do
+      bookmark = Bookmark.create(title: 'Makers Academy', url: 'https://www.makersacademy.com')
+
+      Bookmark.delete(id: bookmark.id)
+
+      expect(Bookmark.all.length).to eq 0
+    end
   end
 
 end

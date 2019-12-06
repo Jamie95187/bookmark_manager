@@ -1,7 +1,10 @@
 require "sinatra/base"
 require_relative "lib/bookmark"
+require 'pg'
 
 class BookmarkManager < Sinatra::Base
+
+  enable :method_override
 
   get "/" do
     erb :index
@@ -19,6 +22,11 @@ class BookmarkManager < Sinatra::Base
 
   get '/bookmarks/new' do
     erb :'bookmarks/new'
+  end
+
+  delete '/bookmarks/:id' do
+    Bookmark.delete(id: params[:id])
+    redirect '/bookmarks'
   end
 
   run! if app_file == $0

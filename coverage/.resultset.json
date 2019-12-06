@@ -24,15 +24,29 @@
         null
       ],
       "/Users/student/Desktop/Projects/bookmark_manager_mon/spec/features/click_title_url_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/Projects/bookmark_manager_mon/spec/features/deleting_a_bookmark_spec.rb": [
+        1,
+        1,
+        1,
         1,
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        null,
         1,
         1,
         null,
@@ -46,12 +60,7 @@
         null,
         null
       ],
-<<<<<<< HEAD
       "/Users/student/Desktop/Projects/bookmark_manager_mon/spec/features/viewing_bookmarks_spec.rb": [
-        1,
-=======
-      "/Users/elizabethmanifold/dev/Makers/Week-4/bookmarks-jamie/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": [
->>>>>>> 74c2c12f92c4c2b84b422f6a352e8b6da372d1bb
         null,
         1,
         1,
@@ -113,6 +122,16 @@
         null,
         null,
         null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/student/Desktop/Projects/bookmark_manager_mon/spec/database_helpers.rb": [
@@ -125,10 +144,6 @@
         null
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1575594988
-=======
-    "timestamp": 1575626873
->>>>>>> 74c2c12f92c4c2b84b422f6a352e8b6da372d1bb
+    "timestamp": 1575642449
   }
 }
