@@ -14,14 +14,14 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-12-05T17:17:29+00:00">2019-12-05T17:17:29+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-12-06T10:07:53+00:00">2019-12-06T10:07:53+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.77%</span></span>
+    (<span class="covered_percent"><span class="green">96.67%</span></span>
      covered at
      <span class="covered_strength">
        <span class="yellow">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>6</b> files in total.
-    <b>62</b> relevant lines. 
-    <span class="green"><b>60</b> lines covered</span> and
+    <b>60</b> relevant lines. 
+    <span class="green"><b>58</b> lines covered</span> and
     <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -93,9 +93,9 @@
       <tr>
         <td class="strong"><a href="#809c2e352d604df633d484e595036946b7a44ea6" class="src_link" title="spec/features/viewing_bookmarks_spec.rb">spec/features/viewing_bookmarks_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>19</td>
-        <td>11</td>
-        <td>11</td>
+        <td>16</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -429,8 +429,8 @@
     <h3>spec/features/viewing_bookmarks_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -438,115 +438,97 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">require &#39;pg&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="never" data-hits="" data-linenumber="1">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">feature &#39;Viewing bookmarks&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
           <code class="ruby">  scenario &#39;A user can see bookmarks&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    connection = PG.connect(dbname: &#39;bookmark_manager_test&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">    # Add the test data</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;https://www.makersacademy.com&#39;, &#39;Makers&#39;);&quot;)</code>
+          <code class="ruby">    Bookmark.create(url: &#39;https://www.makersacademy.com&#39;, title: &#39;Makers&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Bookmark.create(url: &#39;https://www.destroyallsoftware.com&#39;, title: &#39;Destroy Software&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Bookmark.create(url: &#39;https://www.google.com&#39;, title: &#39;Google&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;https://www.destroyallsoftware.com&#39;, &#39;Destroy Software&#39;);&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    connection.exec(&quot;INSERT INTO bookmarks(url, title) VALUES(&#39;https://www.google.com&#39;, &#39;Google&#39;);&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
           <code class="ruby">    visit(&#39;/bookmarks&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_link(&quot;Makers&quot;, href: &#39;https://www.makersacademy.com&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_link(&quot;Destroy Software&quot;, href: &#39;https://www.destroyallsoftware.com&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(page).to have_link(&quot;Google&quot;, href: &#39;https://www.google.com&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
